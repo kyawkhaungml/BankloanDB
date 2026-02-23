@@ -105,6 +105,36 @@ After computing KPIs in SQL, results were exported and visualized using:
 
 ---
 
+## Visualizations
+
+### Loan Status Distribution
+![Loan Status Distribution](images/01_loan_status_distribution.png)
+
+83% of loans in the dataset are fully paid, while only 14% are charged off. This heavy imbalance is a key challenge — without addressing it, an ML model would simply predict "Fully Paid" every time and still look accurate. SMOTE was used during training to correct this.
+
+---
+
+### Charge-off Rate by Loan Grade
+![Charge-off Rate by Loan Grade](images/02_chargoff_by_grade.png)
+
+Loan grade is one of the strongest predictors of whether a borrower defaults. Grade A borrowers charge off at just ~5%, while Grade G borrowers charge off at over 30%. This reflects the bank's internal risk scoring system — and it's exactly what the ML models learn to mimic.
+
+---
+
+### ROC Curves — Model Comparison
+![ROC Curves](images/03_roc_curves.png)
+
+The ROC curve measures how well each model separates good loans from bad ones across all decision thresholds. All models clearly beat random guessing (the dashed line). Logistic Regression leads slightly on AUC (0.684), which is notable given its simplicity — suggesting the relationships in this data are somewhat linear.
+
+---
+
+### Feature Importance — Tuned Random Forest
+![Feature Importance](images/04_feature_importance.png)
+
+`sub_grade` and `int_rate` are by far the most influential features — both encode the bank's assessment of credit risk, just at different levels of granularity. `annual_income`, `dti`, and `emp_length` follow, reflecting the borrower's financial stability. Features like `home_ownership` and `term` contribute less but still add signal.
+
+---
+
 ## Key Insights
 
 - Loan purpose, annual income, and DTI ratio are among the strongest predictors of loan status
