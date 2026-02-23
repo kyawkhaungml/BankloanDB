@@ -149,7 +149,7 @@ The dataset contains anonymized bank customer loan records with the following ke
 ## Author
 
 **Kyaw Khaung Myo Lwin**  
-Aspiring Data Analyst | Finance & Banking Enthusiast  
+Software Developer & Entrepreneur | Finance & Banking Enthusiast  
 
 ---
 
