@@ -1,0 +1,28 @@
+# Data files
+*.csv
+*.xlsx
+*.xls
+
+# Build artifacts
+bin/
+obj/
+*.dll
+*.pdb
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+packages/
+node_modules/
+
+# Logs
+*.log

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "bankloanproject",
+			"path": "../bankloanproject"
+		},
+		{
+			"name": "bankloanDB",
+			"path": "."
+		}
+	],
+	"settings": {
+		"dataworkspace.excludedProjects": [
+			"bankloanproject.sqlproj"
+		]
+	}
+}
